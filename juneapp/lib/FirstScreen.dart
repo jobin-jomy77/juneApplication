@@ -10,6 +10,11 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
+    var card = Card(
+                  child: Text(
+                    "🐟Fish"
+                  ),
+                );
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,6 +65,35 @@ class _FirstScreenState extends State<FirstScreen> {
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))),
             
               ),
+            ),
+
+            Row(
+              children: [
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "🍗Chicken"
+                    ),
+                  ),
+                ),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "🐟Fish"
+                    ),
+                  ),
+                ),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "🐐Red Meat"
+                    ),
+                  ),
+                )
+              ],
             )
           
         ],
