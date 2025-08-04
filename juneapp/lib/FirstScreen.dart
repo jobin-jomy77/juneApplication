@@ -33,7 +33,7 @@ class _FirstScreenState extends State<FirstScreen> {
             padding: const EdgeInsets.only(left: 25,top: 5),
             child: Text("Welcome to our App",
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 30,
                 color: Colors.black,
                 fontWeight: FontWeight.bold
               ),),
@@ -43,7 +43,7 @@ class _FirstScreenState extends State<FirstScreen> {
             padding: const EdgeInsets.only(left: 25,top: 5),
             child: Text("This is the First Screen of our App",
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 25,
                 color: Colors.black,
                 fontWeight: FontWeight.bold
               ),),
