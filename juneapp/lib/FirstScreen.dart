@@ -8,6 +8,11 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  List<String> nonVegItems = [
+    "Chicken",
+    "Fish",
+    "Red Meat"
+  ];
   @override
   Widget build(BuildContext context) {
     var card = Card(
@@ -45,7 +50,7 @@ class _FirstScreenState extends State<FirstScreen> {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(left: 25,top: 5),
+            padding: const EdgeInsets.only(left: 25,top: 65),
             child: Text("This is the First Screen of our App",
               style: TextStyle(
                 fontSize: 25,
@@ -55,7 +60,7 @@ class _FirstScreenState extends State<FirstScreen> {
           ),
 
           Padding(
-            padding: const EdgeInsets.all(30),
+            padding: const EdgeInsets.all(100),
             child: TextField(
               decoration: InputDecoration(
                 filled: true,
@@ -64,6 +69,24 @@ class _FirstScreenState extends State<FirstScreen> {
                 hintText: "Search",
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))),
             
+              ),
+            ),
+            Flexible(
+              child: SizedBox(
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount:  nonVegItems.length,
+                  itemBuilder: (context,index){
+                    return Card(
+                      color: Colors.yellow,
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        " ${nonVegItems[index]}"
+                      ),
+                    ),
+                  );
+                  },),
               ),
             ),
 
