@@ -25,7 +25,22 @@ class _FirstScreenState extends State<FirstScreen> {
 
                 ),
             ],
-          )
+          ),
+
+
+          Text("Welcome to our App",
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.black,
+              fontWeight: FontWeight.bold
+            ),),
+
+          Text("This is the First Screen of our App",
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.black,
+              fontWeight: FontWeight.bold
+            ),)
         ],
       ),
     );
