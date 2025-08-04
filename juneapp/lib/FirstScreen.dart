@@ -47,7 +47,21 @@ class _FirstScreenState extends State<FirstScreen> {
                 color: Colors.black,
                 fontWeight: FontWeight.bold
               ),),
-          )
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(30),
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.grey[200],
+                suffixIcon: Icon(Icons.search),
+                hintText: "Search",
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))),
+            
+              ),
+            )
+          
         ],
       ),
     );
